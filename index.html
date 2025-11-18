@@ -1,35 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechDay</title>
-    <link rel="stylesheet" href="css/main.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Manual Digital SERCO-SIT - Sistema de Registro y Control de la Superintendencia de Telecomunicaciones de Guatemala">
+    <meta name="keywords" content="SERCO, SIT, Guatemala, Telecomunicaciones, Manual Digital, Registro">
+    <meta name="author" content="Superintendencia de Telecomunicaciones">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Manual Digital SERCO-SIT">
+    <meta property="og:description" content="Guía completa para el uso del Sistema SERCO-SIT">
+    <meta property="og:type" content="website">
+
+    <title>Manual Digital SERCO-SIT | Superintendencia de Telecomunicaciones</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="source/favico.png" type="image/x-icon">
+    <link rel="icon" href="source/favico.png" type="image/x-icon">
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Preconnect para Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-    <main class="principal">
-        <!-- COLUNMA -->
-        <a href="pages/indi_material/temas_indi.html" class="indice">
-        <article class="Card_principal indice boxshadow">
-            <img src="source/individual.png" alt="" class="icono center_items" width="100%">
-        </a>
+    <!-- Header Section -->
+    <header role="banner" style="position: absolute; top: 0; left: 0; right: 0; padding: 1.5rem; text-align: center; z-index: 10;">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <h1 style="font-family: var(--font-heading); font-size: var(--text-3xl); color: var(--primary-navy); margin: 0; font-weight: 700; letter-spacing: -0.02em;">
+                Manual Digital SERCO-SIT
+            </h1>
+            <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-top: 0.5rem; font-weight: 500;">
+                Sistema de Registro y Control | Superintendencia de Telecomunicaciones
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="principal" role="main" style="margin-top: 120px;">
+
+        <!-- Card 1: Persona Individual -->
+        <article class="Card_principal indice boxshadow" role="article" aria-label="Manual para Persona Individual">
+            <a href="pages/indi_material/temas_indi.html" class="indice" aria-label="Acceder al manual para Persona Individual">
+                <div style="text-align: center;">
+                    <div style="margin-bottom: var(--space-lg); position: relative;">
+                        <img src="source/individual.png"
+                             alt="Icono de Persona Individual"
+                             class="icono center_items"
+                             width="100%"
+                             style="border-radius: var(--radius-lg); transition: transform var(--transition-base);"
+                             onmouseover="this.style.transform='scale(1.05)'"
+                             onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); color: var(--primary-blue); margin-bottom: var(--space-md); font-weight: 700;">
+                        Persona Individual
+                    </h2>
+                    <p style="font-size: var(--text-base); color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-lg);">
+                        Guía completa para usuarios individuales. Aprenda a crear su cuenta, gestionar inscripciones y renovar certificaciones.
+                    </p>
+                    <span class="enlace" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Explorar Manual
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </div>
+            </a>
         </article>
 
-        <!-- COLUNMA -->
-        <article class="columna dos boxshadow">
-               <img src="source/qrmanual.png" alt="" class="center_items" width="100%">
+        <!-- Card 2: QR Manual -->
+        <article class="columna dos boxshadow" role="article" aria-label="Código QR del Manual">
+            <div style="text-align: center;">
+                <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); color: var(--white); margin-bottom: var(--space-lg); font-weight: 700;">
+                    Acceso Rápido
+                </h2>
+                <p style="font-size: var(--text-base); color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin-bottom: var(--space-xl);">
+                    Escanea el código QR para acceder al manual desde tu dispositivo móvil.
+                </p>
+                <div style="background: white; padding: var(--space-lg); border-radius: var(--radius-xl); display: inline-block; box-shadow: var(--shadow-lg);">
+                    <img src="source/qrmanual.png"
+                         alt="Código QR para acceder al manual digital SERCO-SIT"
+                         class="center_items"
+                         width="100%"
+                         style="max-width: 250px; margin: 0 auto; display: block;">
+                </div>
+                <p style="font-size: var(--text-sm); color: rgba(255, 255, 255, 0.8); margin-top: var(--space-lg); font-style: italic;">
+                    Disponible 24/7 desde cualquier dispositivo
+                </p>
+            </div>
         </article>
 
-        <!-- COLUNMA PREGUNTAS FRECUENTES -->
-        <article class="columna indice boxshadow">
-            <a href="pages/juri_material/temas_juri.html">
-            <img src="source/juridica.png" alt="" class="icono" width="100%">
-        </a>
+        <!-- Card 3: Persona Jurídica -->
+        <article class="columna indice boxshadow" role="article" aria-label="Manual para Persona Jurídica">
+            <a href="pages/juri_material/temas_juri.html" aria-label="Acceder al manual para Persona Jurídica">
+                <div style="text-align: center;">
+                    <div style="margin-bottom: var(--space-lg); position: relative;">
+                        <img src="source/juridica.png"
+                             alt="Icono de Persona Jurídica"
+                             class="icono"
+                             width="100%"
+                             style="border-radius: var(--radius-lg); transition: transform var(--transition-base);"
+                             onmouseover="this.style.transform='scale(1.05)'"
+                             onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <h2 style="font-family: var(--font-heading); font-size: var(--text-2xl); color: var(--primary-blue); margin-bottom: var(--space-md); font-weight: 700;">
+                        Persona Jurídica
+                    </h2>
+                    <p style="font-size: var(--text-base); color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-lg);">
+                        Procedimientos para entidades legales. Gestione registros corporativos, inscripciones y trámites institucionales.
+                    </p>
+                    <span class="enlace" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Explorar Manual
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </div>
+            </a>
         </article>
-    </main> 
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" style="position: fixed; bottom: 0; left: 0; right: 0; padding: 1rem; text-align: center; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--gray-100); z-index: 10;">
+        <p style="font-size: var(--text-xs); color: var(--text-tertiary); margin: 0;">
+            &copy; 2025 Superintendencia de Telecomunicaciones de Guatemala | SERCO-SIT
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Inline Script for Enhanced UX -->
+    <script>
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Accessibility: Trap focus within modals
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modal = document.querySelector('[role="dialog"]');
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        });
+
+        // Add hover effect data for cards
+        const cards = document.querySelectorAll('.Card_principal, .columna');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+            });
+        });
+    </script>
 </body>
 </html>
-
